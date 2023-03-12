@@ -1,0 +1,13 @@
+var sheet_id = "1aYuRAT-nHWGJn1AR-fepgWlu9l-85TQqvWtnRwR97T0";
+var sheet_name = "ESP32_DATA";
+function doGet(e){
+var dateTime = new Date();
+var ss = SpreadsheetApp.openById(sheet_id);
+var sheet = ss.getSheetByName(sheet_name);
+//var row = sheet.getLastRow() + 1;
+var sensor = Number(e.parameter.sensor);
+var stt = String(e.parameter.stt);
+
+//sheet.getRange("C0" + row).setValue(dateTime);
+sheet.appendRow([stt,sensor,dateTime]);
+}
