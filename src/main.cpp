@@ -27,7 +27,7 @@
 // Your WiFi credentials.
 // Set password to "" for open networks.
 char ssid[] = "Hang_2.4G";
-char pass[] = "0948315735";
+char pass[] = "password";
 
 /*====Define PIN=======*/
 #define DHTPIN 5
